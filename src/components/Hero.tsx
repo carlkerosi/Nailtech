@@ -26,9 +26,10 @@ const Hero = () => {
           <div className="text-center md:text-left opacity-0 animate-fade-in" style={{ animationDelay: '0.3s' }}>
             <div className="mb-6 max-w-md mx-auto md:mx-0">
               <img
-                src="https://img.freepik.com/free-photo/top-view-nail-care-accessories-arrangement_23-2149096471.jpg"
+                src="https://i.pinimg.com/736x/99/dc/56/99dc56fd7ee097a7b429d5147c5bcd8e.jpg"
                 alt="Nail accessories and tools"
-                className="w-full h-auto rounded-lg shadow-lg"
+                className="w-full h-auto rounded-lg shadow-lg h-400px"
+                
               />
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-playfair font-bold text-salon-brown mb-4">

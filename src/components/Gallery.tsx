@@ -1,4 +1,3 @@
-
 import { useEffect, useRef, useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
@@ -6,17 +5,14 @@ const Gallery = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const [activeIndex, setActiveIndex] = useState(0);
 
+  // Updated gallery images with the provided links
   const galleryImages = [
-    '/lovable-uploads/c17696ee-fba7-4dbf-8f03-44dcdc3953cb.png',
-    '/lovable-uploads/65248983-0eb5-4855-a92b-a878c0ca52f6.png',
-    '/lovable-uploads/abb3a452-1e1a-47e1-8144-19dda92d9565.png',
-    '/lovable-uploads/6038b552-f9a9-49b2-8ca9-353b0085ba26.png',
-    '/lovable-uploads/cf4b6c20-5d94-4ba1-9299-2684e6697ec5.png',
-    '/lovable-uploads/e626414b-5ac7-4446-8e7e-4631b709714a.png',
-    '/lovable-uploads/15066012-516b-4bc5-8ce1-d170cc3983cb.png',
-    '/lovable-uploads/7d0233ee-21e2-4d10-9d1f-2429ab3fe4dc.png',
-    '/lovable-uploads/269f55e4-f0ff-4f8c-8e93-e970b9f057d7.png',
-    '/lovable-uploads/375c9182-64a6-45cb-8994-5caf47e38a34.png',
+    'https://i.pinimg.com/736x/2b/e0/01/2be001afe7d8dd2572d50a82a05d58cd.jpg',
+    'https://i.pinimg.com/736x/b3/8d/85/b38d85c3a8fe6721fa6aaa3a67ded429.jpg',
+    'https://i.pinimg.com/736x/3d/ce/ab/3dceabeaa8f35c10e0cbf3acaf06e0f6.jpg',
+    'https://i.pinimg.com/736x/05/f0/d1/05f0d1f32fb0f49280c52f25bf5ab661.jpg',
+    'https://i.pinimg.com/736x/d5/34/f3/d534f36a2eb13d95ab393887086e0e21.jpg',
+    'https://i.pinimg.com/736x/10/e0/c3/10e0c3a82d2de12528098dcf25006cd3.jpg',
   ];
 
   const nextSlide = () => {
@@ -27,6 +23,7 @@ const Gallery = () => {
     setActiveIndex((prev) => (prev === 0 ? galleryImages.length - 1 : prev - 1));
   };
 
+  // Intersection Observer for fade-in animation
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -51,19 +48,22 @@ const Gallery = () => {
     };
   }, []);
 
+  // Auto-slide functionality
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
-    }, 5000);
+    }, 5000); // Change slide every 5 seconds
 
-    return () => clearInterval(interval);
-  }, [activeIndex]);
+    return () => clearInterval(interval); // Clean up the interval on component unmount or activeIndex change
+  }, [activeIndex]); // Re-run effect when activeIndex changes to reset the timer
 
   return (
     <section id="gallery" className="section-padding bg-salon-cream relative">
+      {/* Decorative lotus element */}
       <div className="lotus-decoration top-20 right-5 -rotate-45 text-8xl">✿</div>
       
       <div ref={sectionRef} className="container mx-auto page-section">
+        {/* Section header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-playfair text-salon-brown mb-4">Our Work</h2>
           <div className="w-20 h-1 bg-salon-dark-pink mx-auto mb-6"></div>
@@ -126,6 +126,7 @@ const Gallery = () => {
         </div>
 
         {/* Thumbnails */}
+        {/* The 'in-view' class will be added by the IntersectionObserver for animation */}
         <div className="grid grid-cols-4 sm:grid-cols-5 gap-2 mt-8 max-w-4xl mx-auto opacity-0" style={{ 
             animationName: 'fade-in', 
             animationDuration: '0.7s', 

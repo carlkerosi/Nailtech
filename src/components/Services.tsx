@@ -14,25 +14,25 @@ const services: Service[] = [
     icon: <Scissors className="h-8 w-8 text-salon-brown" />,
     title: "Manicure",
     description: "Professional nail care for your hands with cuticle treatment, shaping, and polish.",
-    price: "5k - 7k"
+    price: "300-500"
   },
   {
     icon: <Droplet className="h-8 w-8 text-salon-brown" />,
     title: "Pedicure",
     description: "Luxurious foot treatment including exfoliation, massage, and perfectly polished toes.",
-    price: "5k - 6k"
+    price: "500-800"
   },
   {
     icon: <PaintBucket className="h-8 w-8 text-salon-brown" />,
     title: "Soak Off",
     description: "Safe removal of gel polish or acrylics to maintain nail health.",
-    price: "2k - 3k"
+    price: "400 - 800"
   },
   {
     icon: <Palette className="h-8 w-8 text-salon-brown" />,
     title: "Extra Art",
     description: "Custom nail art designs from simple accents to elaborate patterns.",
-    price: "2k"
+    price: "100"
   }
 ];
 

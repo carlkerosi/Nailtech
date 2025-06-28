@@ -24,7 +24,7 @@ const Footer = () => {
               <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-salon-cream transition-colors">
                 <Twitter size={20} />
               </a>
-              <a href="https://wa.me/26599726866" target="_blank" rel="noopener noreferrer" className="hover:text-salon-cream transition-colors">
+              <a href="https://wa.me/254727796332" target="_blank" rel="noopener noreferrer" className="hover:text-salon-cream transition-colors">
                 <MessageSquare size={20} />
               </a>
             </div>
@@ -53,8 +53,7 @@ const Footer = () => {
           
           <div className="text-center md:text-right">
             <h3 className="text-xl font-playfair mb-4">Contact Us</h3>
-            <p className="mb-2 text-white/80">+26599 726 8668</p>
-            <p className="mb-2 text-white/80">+26588 949 7951</p>
+            <p className="mb-2 text-white/80">+254727796332</p>
         
             <button 
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}

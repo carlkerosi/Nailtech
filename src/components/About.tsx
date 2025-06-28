@@ -74,7 +74,7 @@ const About = () => {
                 animationTimingFunction: 'ease-out' 
               }}>
               <img 
-                src="/lovable-uploads/abb3a452-1e1a-47e1-8144-19dda92d9565.png" 
+                src="https://i.pinimg.com/736x/29/62/59/2962595b3a70f13b07224396320fd970.jpg" 
                 alt="Nail technician working on customer's feet" 
                 className="w-full h-auto"
               />
