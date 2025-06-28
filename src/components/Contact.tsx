@@ -7,6 +7,7 @@ const Contact = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const [formData, setFormData] = useState({
     name: '',
+    BookingNo: [],
     email: '',
     phone: '',
     service: '',
@@ -25,6 +26,7 @@ const Contact = () => {
     // Construct email body
     const emailBody = `
       Name: ${formData.name}
+      BookingNo: ${formData.BookingNo.join(', ')}
       Email: ${formData.email}
       Phone: ${formData.phone}
       Service: ${formData.service}
@@ -32,11 +34,11 @@ const Contact = () => {
     `;
     
     // Create mailto link
-    const mailtoLink = `mailto:pacesnailbar@gmail.com?subject=Booking Request from ${formData.name}&body=${encodeURIComponent(emailBody)}`;
+    const mailtoLink = `mailto:Beautyexpress@gmail.com?subject=Booking Request from ${formData.name}&body=${encodeURIComponent(emailBody)}`;
     
     // Create WhatsApp link with message
-    const whatsappMessage = `Hello Paces Nailbar, I'd like to book an appointment.\n\nName: ${formData.name}\nService: ${formData.service}\nMessage: ${formData.message}`;
-    const whatsappLink = `https://wa.me/26599726866?text=${encodeURIComponent(whatsappMessage)}`;
+    const whatsappMessage = `Hello Beauty Express, I'd like to book an appointment.\n\nName: ${formData.name}\nService: ${formData.service}\nMessage: ${formData.message}`;
+    const whatsappLink = `https://wa.me/+254727796332?text=${encodeURIComponent(whatsappMessage)}`;
     
     // Show success message
     toast({
@@ -82,6 +84,7 @@ const Contact = () => {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-playfair text-salon-brown mb-4">Book an Appointment</h2>
           <div className="w-20 h-1 bg-salon-dark-pink mx-auto mb-6"></div>
+            
           <p className="text-salon-light-brown">
             Ready for a nail transformation? Book your appointment with us today.
           </p>
@@ -236,8 +239,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="font-medium text-salon-brown">Phone</p>
-                  <p className="text-salon-light-brown">+26599 726 8668</p>
-                  <p className="text-salon-light-brown">+26588 949 7951</p>
+                  <p className="text-salon-light-brown">+254727796332</p>
+                
                 </div>
               </div>
               
@@ -247,7 +250,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="font-medium text-salon-brown">Email</p>
-                  <p className="text-salon-light-brown">pacesnailbar@gmail.com</p>
+                  <p className="text-salon-light-brown">Beautyexpress@gmail.com</p>
                 </div>
               </div>
               
@@ -257,7 +260,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="font-medium text-salon-brown">Location</p>
-                  <p className="text-salon-light-brown">Visit our cozy salon in the heart of the city.</p>
+                  <p className="text-salon-light-brown">Philadelphia House, 3rd floor,Room 8.</p>
                 </div>
               </div>
               
@@ -267,8 +270,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="font-medium text-salon-brown">Working Hours</p>
-                  <p className="text-salon-light-brown">Monday to Saturday: 9:00 AM - 7:00 PM</p>
-                  <p className="text-salon-light-brown">Sunday: 10:00 AM - 5:00 PM</p>
+                  <p className="text-salon-light-brown">Monday to Saturday: 9:00 AM - 8:00 PM</p>
+                  <p className="text-salon-light-brown">Sunday: 10:00 AM - 6:00 PM</p>
                 </div>
               </div>
             </div>

@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div className="text-center md:text-left">
-            <h3 className="text-2xl font-playfair mb-4">Paces Nailbar</h3>
+            <h3 className="text-2xl font-playfair mb-4">Beauty Express</h3>
             <p className="mb-4 text-white/80">
               The ultimate nail destination where beauty meets artistry. We pride ourselves on 
               delivering exceptional nail care services with passion and precision.
@@ -18,7 +18,7 @@ const Footer = () => {
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-salon-cream transition-colors">
                 <Facebook size={20} />
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-salon-cream transition-colors">
+              <a href="https://www.instagram.com/beautyexpress.ke?igsh=MzhzOHhtZGE5cHA5" target="_blank" rel="noopener noreferrer" className="hover:text-salon-cream transition-colors">
                 <Instagram size={20} />
               </a>
               <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-salon-cream transition-colors">
@@ -55,7 +55,7 @@ const Footer = () => {
             <h3 className="text-xl font-playfair mb-4">Contact Us</h3>
             <p className="mb-2 text-white/80">+26599 726 8668</p>
             <p className="mb-2 text-white/80">+26588 949 7951</p>
-            <p className="mb-4 text-white/80">pacesnailbar@gmail.com</p>
+        
             <button 
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               className="inline-block bg-white text-salon-brown px-4 py-2 rounded-md hover:bg-salon-cream transition-colors"
@@ -68,11 +68,11 @@ const Footer = () => {
         <div className="border-t border-white/20 pt-6 flex flex-col items-center">
           <p className="flex items-center justify-center text-white/80 mb-2">
             <Copyright size={16} className="mr-1" />
-            {currentYear} Paces Nailbar. All Rights Reserved.
+            {currentYear} Beauty Express. All Rights Reserved.
           </p>
           
           <p className="flex items-center justify-center text-white/80">
-            Designed with <Heart size={16} className="mx-1 text-salon-peach animate-pulse" /> by Eng. P. D. Makupe
+            Designed with <Heart size={16} className="mx-1 text-salon-peach animate-pulse" /> by Zain Santos & Carl Kerosi
           </p>
         </div>
       </div>

@@ -1,5 +1,6 @@
 
 import { useState, useEffect } from 'react';
+import { Instagram } from 'lucide-react';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { 
   NavigationMenu,
@@ -52,7 +53,7 @@ const Navbar = () => {
         <div className="flex items-center justify-center">
           <div className="md:absolute md:left-4">
             <span className="text-2xl font-playfair font-bold text-salon-brown">
-              Paces <span className="text-salon-dark-pink">Nailbar</span>
+              Beauty<span className="text-salon-dark-pink">Express</span>
             </span>
           </div>
 
@@ -136,6 +137,20 @@ const Navbar = () => {
               <button onClick={() => scrollToSection('contact')} className="nav-link">
                 Contact
               </button>
+               <div className="flex space-x-4 justify-center md:justify-start">
+                <button>
+
+              
+              <a href="https://www.instagram.com/beautyexpress.ke?igsh=MzhzOHhtZGE5cHA5" target="_blank" rel="noopener noreferrer" className="hover:text-salon-cream transition-colors bg-dark">
+                <Instagram size={40} />
+              </a>
+
+              
+                </button>
+            </div>
+
+
+              
             </div>
           </div>
         )}

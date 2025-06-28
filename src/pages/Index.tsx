@@ -12,7 +12,7 @@ import ScrollToTop from '@/components/ScrollToTop';
 const Index = () => {
   useEffect(() => {
     // Update the title
-    document.title = "Paces Nailbar - The Ultimate Nail Destination";
+    document.title = "Beauty Express - The Ultimate Nail Destination";
 
     // Initialize intersection observer for animations
     const observer = new IntersectionObserver(

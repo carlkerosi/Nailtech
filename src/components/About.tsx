@@ -35,7 +35,7 @@ const About = () => {
       
       <div ref={sectionRef} className="container mx-auto page-section">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-playfair text-salon-brown mb-4">About Paces Nailbar</h2>
+          <h2 className="text-3xl md:text-4xl font-playfair text-salon-brown mb-4">About Beauty Express</h2>
           <div className="w-20 h-1 bg-salon-dark-pink mx-auto mb-6"></div>
         </div>
         
@@ -49,7 +49,7 @@ const About = () => {
               }}>
               <img 
                 src="/lovable-uploads/269f55e4-f0ff-4f8c-8e93-e970b9f057d7.png" 
-                alt="Paces Nailbar Brochure" 
+                alt="Beauty Express Brochure" 
                 className="w-full h-auto"
               />
             </div>
@@ -92,7 +92,7 @@ const About = () => {
               The Ultimate Nail Destination
             </h3>
             <p className="text-salon-light-brown mb-6">
-              At Paces Nailbar, we believe that beautiful nails are an expression of self-care and personal style. 
+              At Beauty Express, we believe that beautiful nails are an expression of self-care and personal style. 
               Our skilled technicians combine artistry and precision to deliver exquisite nail designs that enhance 
               your natural beauty.
             </p>
